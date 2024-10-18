@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="author" content="solrac">
+    <meta name="description" content="My Projects TW 2">
+    <meta name="keywords" content="HTML, CSS, JS, Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>My Profile</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <!-- Bootstrap CSS offline -->
+    <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap Icons offline -->
+    <!--<link href="./icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <!-- Bootstrap CSS online -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons online -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- My CSS -->
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbar-toggler"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/principal.png" width="50" alt="My logo">
+                </a>
+                <ul class="navbar-nav d-flex justify-content-center aling-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#aboutme" aria-current="page">Sobre mí <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#references">Referencias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactme">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Me -->
+<section class="myclass align-items-stretch">
+    <div class="myclass-main d-flex flex-column justify-content-center align-items-center">
+        <img class="myclass-pic rounded-circle" src="./images/perfil.jpg" alt="My selfie">
+        <h1>Hola, soy Alejandra</h1>
+        <h2>Codificando el futuro, un proyecto a la vez.</h2>
+    </div>
+    <div class="myclass-label">            
+        <img class="myclass-imagen img-fluid" src="./images/principal.png" alt="think twice code once">
+    </div>
+</section>
+
+
+    <!-- About me -->
+    <section id="aboutme" class="about-me section-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Conoce a Alejandra</h2>
+            <p class="seccion-texto">
+                💻 Estudiante de Informática apasionada por la tecnología y el desarrollo de software. 💻 <br>
+⌨️ Actualmente mejorando habilidades en C y Java. <br>
+⌨️ Me encanta explorar nuevas ideas y trabajar en proyectos desafiantes. 
+            </p>
+            <p class="seccion-texto">
+                <strong>Habilidades Técnicas:</strong>
+            </p>
+            <ul class="seccion-texto">
+                <li><strong>Lenguajes de Programación:</strong>
+                    <ul>
+                    <li>C</li>
+                    <li>Java</li>
+                    </ul>
+                </li>
+                <li><strong>Base de Datos:</strong>
+                    <ul>
+                        <li>SQL (MySQL, Heidi)</li>
+                    </ul>
+                </li>
+                <li><strong>Herramientas de Desarrollo:</strong>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Eclipse</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    
+
+    <!-- Experience -->
+    <section class="experiencia section-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!-- Programming -->
+                <div class="experiencia-columna col-12 col-md-4">                    
+                    <p class="columna experiencia-title">Programación</p>                    
+                    <i class="bi-braces"></i>
+                    <p>
+                        Conocimientos básicos en lenguajes como: 
+                    </p>
+                    <div class="badge-contenedor">                        
+                        <span class="badge bg-primary">C</span>
+                        <span class="badge bg-primary">Java</span>                        
+                    </div>
+                </div>
+                <!-- Bases de Datos -->
+            <div class="experiencia-columna col-12 col-md-4">                    
+                <p class="columna experiencia-title">Bases de Datos</p>
+                <i class="bi-database"></i>
+                <p>
+                    Experiencia en diseño y gestión de bases de datos, con énfasis en SQL.
+                </p>
+                <div class="badge-contenedor">                        
+                    <span class="badge bg-primary">MySQL</span>                        
+                    <span class="badge bg-primary">Heidi</span>                       
+                </div>
+            </div>
+                <!-- Management -->
+                <div class="experiencia-columna col-12 col-md-4">
+                    <p class="columna experiencia-title">Áreas de Interés</p>
+                    <i class="bi-briefcase"></i>
+                    <p>
+                        Me apasiona explorar diferentes campos dentro de la tecnología y la informática, enfocándome en las siguientes áreas:
+                    </p>
+                    <div class="badge-contenedor">                        
+                        <span class="badge bg-primary">Programación</span>                        
+                        <span class="badge bg-primary">Redes</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="proyectos section-clara d-flex flex-column">
+        <h2 class="seccion-titulo">Mis Proyectos</h2>
+        <h3 class="seccion-descripcion" style="text-align: center;">
+            Mis proyectos ofrecen soluciones tecnológicas que integran diseño, desarrollo y gestión.<br>
+            Cada uno refleja mi compromiso.<br>
+            Te invito a ver mi portafolio, donde muestro cómo creo aplicaciones eficientes que satisfacen necesidades reales.
+        </h3>
+        
+        
+        <!-- gallery -->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/pro1.png" alt="Project 1">
+                        <div class="overlay">
+                            <p>Máquina de Turing simple</p>
+                            <div class="icons-project">
+                                <a href="https://github.com/AlejandraJimV/Maquina-de-Turing-Simple" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/pro2.png" alt="Project 1">
+                        <div class="overlay">
+                            <p>Máquina de Turing multicinta</p>
+                            <div class="icons-project">
+                                <a href="https://github.com/AlejandraJimV/Maquina-de-Turing-multicinta" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/pro3.png" alt="Project 1">
+                        <div class="overlay">
+                            <p>Registro de control de alumnos</p>
+                            <div class="icons-project">
+                                <a href="https://github.com/AlejandraJimV/Control-de-alumnos" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/pro4.png" alt="Project 1">
+                        <div class="overlay">
+                            <p>Programa contable</p>
+                            <div class="icons-project">
+                                <a href="https://github.com/AlejandraJimV/Programa-contable" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/pro5.png" alt="Project 1">
+                        <div class="overlay">
+                            <p>Método de ordenación SHELL</p>
+                            <div class="icons-project">
+                                <a href="https://github.com/AlejandraJimV/Ordenamiento-Shell" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./images/pro6.png" alt="Project 1">
+                        <div class="overlay">
+                            <p>Árboles de búsqueda binaria</p>
+                            <div class="icons-project">
+                                <a href="https://github.com/AlejandraJimV/Arboles-de-busqueda-binaria" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--<a href="" target="_blank" rel="noopener noreferrer"></a>
+            <button type="button" class="btn btn-info">Más chambas
+                <i class="bi-arrow-right-circle"></i>
+            </button>-->
+        </a>
+    </section>
+
+    <!-- Tips -->
+    <section class="tips justify-content-start">
+        <h2 class="seccion-titulo">Tips</h2>
+        <div class="card">
+            <div class="card-header">
+                Sobre Programación
+            </div>
+            <ul class="list-group list-group-flush">
+                <a href="https://retosdeprogramacion.com/ejercicios" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Ejercicios para mejorar la lógica de programación</li>
+                </a>
+                <a href="https://tripleten.com/es-mex/courses/meet-special/?utm_source=google&utm_medium=cpc&utm_campaign=inhouse_gl_mex_meet-courses_allprofs_ua_sem_course&utm_content=cid--20571152870_gid--153737994877_adset--allprof_learn_es_creative--666877592120_adname--_network--g_tid--kwd-2181598713_tg--_placement--_dvc--c_loc--1031311&utm_term=_key--aprender%20a%20programar&gad_source=1&gclid=CjwKCAjw68K4BhAuEiwAylp3koKtCeXF26wz1gCOlhTiOVvMsKP9DdVqsusi9os_7mlb6oHsGjyLOhoCRJIQAvD_BwE" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Aprende a programar desde cero</li>
+                </a>
+                <a href="https://www.aluracursos.com/blog/estructura-de-datos-introduccion" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Estructura de datos: introducción</li>
+                </a>
+                <a href="https://www.elladodelmal.com/2013/08/como-ser-hacker-o-como-aprender-hacking.html" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Cómo ser hacker o Cómo aprender hacking</li>
+                </a>
+                <a href="https://emtech.digital/santander-openacademy/" target="_blank" rel="noopener noreferrer">
+                    <li class="list-group-item">Tecnologías Emergentes</li>
+                </a>
+            </ul>
+        </div>
+        <!-- <a href="" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">Más tips
+                <i class="bi-arrow-right-circle"></i>
+            </button>
+        </a>-->
+    </section>
+
+    <!-- Sección Certificaciones -->
+    <section id="certificaciones" class="certificaciones section-oscura">
+        <div class="contenedor" style="text-align: center;">
+            <h2 class="seccion-titulo">Constancias</h2>
+            <div class="fila" style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                <div class="columna">
+                    <img src="./images/constancia1.jpg" alt="Certificación 1" class="img-fluid" style="width: 500px; height: auto; margin-bottom: 60px;">
+                </div>
+                <div class="columna">
+                    <img src="./images/constancia2.jpg" alt="Certificación 2" class="img-fluid" style="width: 300px; height: auto; margin-bottom: 60px;">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="references" class="recomendaciones section-clara">
+        <h2 class="seccion-titulo">Recomendaciones</h2>
+        <h3 class="seccion-descripcion">
+            A continuación, algunas palabras de colegas que han trabajado conmigo y pueden dar testimonio de mi dedicación, habilidades y resultados. 
+        </h3>
+        <div id="recomendaciones" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img src="./images/colega1.jpg" class="recomendacion-imagen rounded-circle" alt="...">
+                        <p class="recomendacion-texto"> "Su capacidad para resolver problemas y su actitud colaborativa hacen de ella un gran activo para cualquier equipo. Siempre dispuesta a aprender y compartir conocimientos." </p>
+                        <div class="recomendacion-info">
+                            <p class="amigo">Ernesto Ramos</p>
+                            <p class="cargo">Desarrollador</p>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img src="./images/colega2.jpg" class="recomendacion-imagen rounded-circle" alt="...">
+                        <p class="recomendacion-texto"> "Tiene una gran habilidad para resolver problemas. Su colaboración hace que nuestro equipo sea más fuerte y productivo" </p>
+                        <div class="recomendacion-info">
+                            <p class="amigo">Salvador Sánchez</p>
+                            <p class="cargo">Desarrollador</p>
+                        </div>                    
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img src="./images/colega3.jpg" class="recomendacion-imagen rounded-circle" alt="...">
+                        <p class="recomendacion-texto"> "Se adapta rápidamente a nuevas herramientas y conceptos. Su progreso en poco tiempo es impresionante." </p>
+                        <div class="recomendacion-info">
+                            <p class="amigo">Elisa Sánchez</p>
+                            <p class="cargo">Desarrollador</p>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#recomendaciones" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#recomendaciones" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
+
+    <!-- Contact -->
+    <section id="contactme" class="contact section-oscura">
+        <div class="container">
+            <div class="container text-center rectangulo d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 seccion-titulo">
+                        Contáctame
+                    </div>
+                    <div class="col-12 col-md-4 description">
+                        ¡Lista para llevar tus proyectos al siguiente nivel! Contáctame y hagamos grandes cosas juntos
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:alejandra02jv@gmail.com">
+                            <button type="button">
+                                Contacto
+                                <i class="bi-envelope-check"></i>
+                            </button>
+                        </a>                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-oscura d-flex flex-column aling-items-center justify-content-center">
+        <img class="footer-icon" src="./images/perfil.jpg" alt="Logo profile">
+        <p class="footer-text text-center">
+            Apasionada por la tecnología y la innovación, <br> siempre dispuesta a aprender y enfrentar nuevos desafíos para generar un impacto positivo.
+        </p>
+        <div class="icons-sn d-flex flex-wrap aling-items-center justify-content-center">
+            <a href="https://www.facebook.com/alejandrajv2?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+                <i class="bi-facebook"></i>
+            </a>
+            <a href="https://github.com/AlejandraJimV" target="_blank" rel="noopener noreferrer">
+                <i class="bi-github"></i>
+            </a>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+            <a href="https://www.tiktok.com/@alejandra_jv?_t=8qdewfUCedJ&_r=1" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-tiktok"></i>
+            </a>
+           
+            <a href="https://www.instagram.com/j__alejandra?igsh=eWlsbHhtNTN3OHlv&utm_source=qr" target="_blank" rel="noopener noreferrer">
+                <i class="bi-instagram"></i>
+            </a>
+        </div>
+        <div class="author"> Alejandra Jiménez (2024) &#169; </div>
+    </footer>
+
+    <!-- Bootstrap JS offline -->
+    <script src="./js/bootstrap.min.js"></script>    
+    <!-- Bootstrap JS online -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
+    <!-- My JS -->
+    <script src="./js/main.js"></script>    
+</body>
+</html>

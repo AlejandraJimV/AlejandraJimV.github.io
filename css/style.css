@@ -392,13 +392,3 @@ footer {
         font-size: 18px;
     }
 }
-
-/* cursor-link.png para enlaces */
-a {
-    cursor: url('./images/link.jpg'), auto; 
-}
-
-/* cursor-contact.png para el botón de contacto */
-button {
-    cursor: url('./images/contacto.png'), auto;
-}

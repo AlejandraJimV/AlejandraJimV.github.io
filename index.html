@@ -416,6 +416,7 @@
     </div>
 </section>
 
+
 <script>
     $(document).ready(function() {
         // Efecto de hover en las tarjetas de certificación
@@ -435,6 +436,96 @@
         );
     });
 </script>
+
+<!-- Entornos de Desarrollo -->
+<section id="entornos" class="py-5 bg-light mb-5">
+    <div class="container text-center">
+      <h2 class="seccion-titulo mb-5 fw-bold display-5" style="font-family: 'Lilita One', sans-serif;">Entornos de Desarrollo</h2>
+  
+      <div class="row justify-content-center g-4">
+        <!-- Eclipse -->
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 entorno-card w-100">
+            <div class="card-body">
+              <i class="bi bi-eclipse fs-1 mb-3"></i>
+              <h5 class="card-title fw-bold">Eclipse</h5>
+              <p class="card-text small">Entorno robusto para Java y desarrollo empresarial.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Visual Studio Code -->
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 entorno-card w-100">
+            <div class="card-body">
+              <i class="bi bi-code-slash fs-1 mb-3"></i>
+              <h5 class="card-title fw-bold">VS Code</h5>
+              <p class="card-text small">Editor liviano y extensible para múltiples lenguajes.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Android Studio -->
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 entorno-card w-100">
+            <div class="card-body">
+              <i class="bi bi-android fs-1 mb-3"></i>
+              <h5 class="card-title fw-bold">Android Studio</h5>
+              <p class="card-text small">IDE oficial para el desarrollo de apps Android.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Cisco Packet Tracer -->
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 entorno-card w-100">
+            <div class="card-body">
+              <i class="bi bi-diagram-3 fs-1 mb-3"></i>
+              <h5 class="card-title fw-bold">Cisco PT</h5>
+              <p class="card-text small">Simulador de redes para prácticas de topologías Cisco.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- MySQL -->
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 entorno-card w-100">
+            <div class="card-body">
+              <i class="bi bi-database fs-1 mb-3"></i>
+              <h5 class="card-title fw-bold">MySQL</h5>
+              <p class="card-text small">Sistema de gestión de bases de datos relacional muy utilizado.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Oracle SQL -->
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 entorno-card w-100">
+            <div class="card-body">
+              <i class="bi bi-server fs-1 mb-3"></i>
+              <h5 class="card-title fw-bold">Oracle SQL</h5>
+              <p class="card-text small">Entorno empresarial para manejo avanzado de datos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- jQuery para efecto de elevación -->
+  <script>
+    $(document).ready(function(){
+      $('.entorno-card').hover(
+        function() {
+          $(this).addClass('shadow-lg').css('transform', 'translateY(-5px)');
+        },
+        function() {
+          $(this).removeClass('shadow-lg').css('transform', 'translateY(0)');
+        }
+      );
+    });
+  </script>
+  
 
 <!-- Contact and Footer Section -->
 <section id="contactme-footer" class="contact-footer section-oscura py-5">

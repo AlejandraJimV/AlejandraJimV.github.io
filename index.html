@@ -392,25 +392,45 @@
     });
 </script>
 
-<!-- Sección Certificaciones -->
 <section id="certificaciones" class="py-5 bg-light mb-5">
     <div class="container text-center">
-      <h2 class="seccion-titulo mb-5 fw-bold display-5" style="font-family: 'Lilita One', sans-serif;">Constancias</h2>
-      
-      <div class="row justify-content-center g-4">
-        <div class="col-md-6 col-lg-5 d-flex">
-          <div class="card shadow-sm border-0 certificacion-card w-100 h-100">
-            <img src="./images/constancia1.jpg" alt="Certificación 1" class="card-img-top img-fluid rounded">
-          </div>
+        <h2 class="seccion-titulo mb-5 fw-bold display-5" style="font-family: 'Lilita One', sans-serif;">Constancias</h2>
+        
+        <div class="row justify-content-center g-4">
+            <div class="col-md-6 col-lg-5 d-flex">
+                <div class="card shadow-sm border-0 certificacion-card w-100 h-100">
+                    <img src="./images/constancia1.jpg" alt="Certificación 1" class="card-img-top img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex">
+                <div class="card shadow-sm border-0 certificacion-card w-100 h-100">
+                    <img src="./images/constancia2.jpg" alt="Certificación 2" class="card-img-top img-fluid rounded">
+                </div>
+            </div>
         </div>
-        <div class="col-md-6 col-lg-4 d-flex">
-          <div class="card shadow-sm border-0 certificacion-card w-100 h-100">
-            <img src="./images/constancia2.jpg" alt="Certificación 2" class="card-img-top img-fluid rounded">
-          </div>
-        </div>
-      </div>
     </div>
 </section>
+
+<script>
+    $(document).ready(function() {
+        // Efecto de hover en las tarjetas de certificación
+        $('.certificacion-card').hover(
+            function() {
+                $(this).css({
+                    'transform': 'translateY(-10px)', // Eleva la tarjeta
+                    'box-shadow': '0 12px 24px rgba(0, 0, 0, 0.15)' // Sombra al hacer hover
+                });
+            },
+            function() {
+                $(this).css({
+                    'transform': 'translateY(0)', // Regresa a la posición original
+                    'box-shadow': 'none' // Elimina la sombra
+                });
+            }
+        );
+    });
+</script>
+
 <!-- Contact and Footer Section -->
 <section id="contactme-footer" class="contact-footer section-oscura py-5">
     <div class="container">

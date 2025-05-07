@@ -35,6 +35,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- My CSS -->
     <link href="./css/style.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://alejandrajimv.github.io/">
@@ -44,8 +52,6 @@
     <meta property="og:image" content="./images/titulo.jpg">
     <meta property="og:url" content="https://alejandrajimv.github.io/">
 
-     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/5hb7g5/5hb7g5/5hb7g5/5hb7g5/5hb7g5/5hb7g5" crossorigin="anonymous"></script>
    
 
 
@@ -438,70 +444,82 @@
 </script>
 
 <!-- Entornos de Desarrollo -->
-<section id="entornos" class="py-5 bg-light">
+<section id="entornos" class="py-5 bg-light mb-5">
     <div class="container text-center">
       <h2 class="seccion-titulo mb-5 fw-bold display-5" style="font-family: 'Lilita One', sans-serif;">Entornos de Desarrollo</h2>
   
       <div class="row justify-content-center g-4">
         <!-- Eclipse -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card entorno-card border-0 shadow-sm h-100">
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 entorno-card w-100">
             <div class="card-body">
-              <i class="fa-brands fa-java fa-2x text-primary mb-3"></i>
-              <h5 class="card-title">Eclipse</h5>
-              <p class="card-text">IDE para programación en Java.</p>
+              <i class="fas fa-circle-notch fa-2x text-primary mb-3"></i>
+              <h5 class="card-title fw-bold">Eclipse</h5>
+              <p class="card-text small">Entorno robusto para Java y desarrollo empresarial.</p>
             </div>
           </div>
         </div>
   
-        <!-- Visual Studio Code -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card entorno-card border-0 shadow-sm h-100">
+        <!-- VS Code -->
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 entorno-card w-100">
             <div class="card-body">
-              <i class="fa-brands fa-microsoft fa-2x text-primary mb-3"></i>
-              <h5 class="card-title">Visual Studio Code</h5>
-              <p class="card-text">Editor moderno para múltiples lenguajes.</p>
+              <i class="fas fa-code fa-2x text-info mb-3"></i>
+              <h5 class="card-title fw-bold">VS Code</h5>
+              <p class="card-text small">Editor liviano y extensible para múltiples lenguajes.</p>
             </div>
           </div>
         </div>
   
         <!-- Android Studio -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card entorno-card border-0 shadow-sm h-100">
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 entorno-card w-100">
             <div class="card-body">
-              <i class="fa-brands fa-android fa-2x text-success mb-3"></i>
-              <h5 class="card-title">Android Studio</h5>
-              <p class="card-text">IDE oficial para desarrollo de apps Android.</p>
+              <i class="fab fa-android fa-2x text-success mb-3"></i>
+              <h5 class="card-title fw-bold">Android Studio</h5>
+              <p class="card-text small">IDE oficial para el desarrollo de apps Android.</p>
             </div>
           </div>
         </div>
   
         <!-- Cisco Packet Tracer -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card entorno-card border-0 shadow-sm h-100">
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 entorno-card w-100">
             <div class="card-body">
-              <i class="fa-solid fa-network-wired fa-2x text-secondary mb-3"></i>
-              <h5 class="card-title">Cisco PT</h5>
-              <p class="card-text">Simulador de redes para prácticas CCNA.</p>
+              <i class="fas fa-network-wired fa-2x text-secondary mb-3"></i>
+              <h5 class="card-title fw-bold">Cisco PT</h5>
+              <p class="card-text small">Simulador de redes para prácticas de topologías Cisco.</p>
             </div>
           </div>
         </div>
   
         <!-- MySQL -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card entorno-card border-0 shadow-sm h-100">
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm border-0 entorno-card w-100">
             <div class="card-body">
-              <i class="fa-solid fa-database fa-2x text-info mb-3"></i>
-              <h5 class="card-title">MySQL</h5>
-              <p class="card-text">Gestión de bases de datos relacionales.</p>
+              <i class="fas fa-database fa-2x text-warning mb-3"></i>
+              <h5 class="card-title fw-bold">MySQL</h5>
+              <p class="card-text small">Sistema de gestión de bases de datos relacional.</p>
             </div>
           </div>
         </div>
-  
       </div>
     </div>
   </section>
-
+  
+  <!-- jQuery para efecto de elevación -->
+  <script>
+    $(document).ready(function () {
+      $('.entorno-card').hover(
+        function () {
+          $(this).addClass('shadow-lg').css('transform', 'translateY(-5px)');
+        },
+        function () {
+          $(this).removeClass('shadow-lg').css('transform', 'translateY(0)');
+        }
+      );
+    });
+  </script>
   
 
 <!-- Contact and Footer Section -->

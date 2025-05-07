@@ -1,9 +1,9 @@
 :root {
-    --color_0: #3F3D56;
-    --color_1: #6C63FF;
-    --color_2: #2F2E41;
-    --color_3: #CCCCCC;
-    --color_4: #FFB9B9;
+    --color_0: #333333;   /* Gris oscuro */
+    --color_1: #555555;   /* Gris medio */
+    --color_2: #777777;   /* Gris claro */
+    --color_3: #CCCCCC;   /* Gris muy claro */
+    --color_4: #F5F5F5;   /* Blanco humo */
 }
 
 /* Navbar */
